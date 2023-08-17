@@ -1,0 +1,6 @@
+clear all
+I = imread('aritra.jpg');
+subplot(1,2,1), imshow(I)
+f = ones(3,3)/9;
+F = filter2(f,I,'same');
+subplot(1,2,2), imshow(F/255)
